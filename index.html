@@ -1,40 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>FYP-23-S2-29</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
-        <h1>FYP-23-S2-29</h1>
-        <h1>Project Topic: Homomorphic Encryption and Its Applications to
-            e-voting </h1>
-        <h2>Objective:</h2>
-        <p>To implement a fully homomorphic encryption scheme and to apply it to
-            e-voting application.</p>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">FYP-23-S2-29</div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Homepage</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="links.html">Links</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="references.html">References</a>
+                    
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                                <!-- <li class="nav-item"><a class="nav-link" href="#!">Link</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#!">Action</a>
+                                        <a class="dropdown-item" href="#!">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#!">Something else here</a>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <h1 class="mt-4">FYP-23-S2-29</h1>
 
-        <h2>Description:</h2>
-        <p>[insert some info on FHE here and how we gonna implement it to a
-            django e-voting webapp]</p>
-        <h3>Group Members and Roles:</h3>
-        <li>Jeanne Robyn Li Pei Xin</li>
-        <li>Aaron Vincent</li>
-        <li>Lim Yong Xiang</li>
-        <li>Low Ying Shao, Jim</li>
-        <li>Tan ZiKang</li>
-        <div style="border: 5px solid red;">
-            <h3>Instruction for project website(Remove when done)</h3>
-            <p>To set up project website. Project website need
-                not be sofisticated.
-                A Website consisting of a main page describing the objective as
-                well
-                as the project, a page consisting of information of the project
-                members (Who is who), and a page consisting of all project
-                documentations (works in progress) for communication among team
-                members. If the website is not up yet, please email me your
-                progress
-                update. </p>
+                    <h1>Project Title: Homomorphic Encryption and Its Applications to e-voting </h1>
+                    <br/>
+                    <h3>Project Description:</h3>
+                    <table class="table-borderless">
+                        <tr>
+                            <td>Homomorphic encryption is a form of encryption that permits users to perform
+                                computations on its encrypted data without first decrypting it. These resulting
+                                computations are left in an encrypted form which, when decrypted, result in an
+                                identical output to that produced had the operations been performed on the
+                                unencrypted data. Homomorphic encryption can be used for privacypreserving outsourced storage and computation. This allows data to be
+                                encrypted and out-sourced to commercial cloud environments for processing,
+                                all while encrypted.
+                                Fully homomorphic encryption (FHE) allows the evaluation of arbitrary
+                                circuits composed of multiple types of gates of unbounded depth, and is the
+                                strongest notion of homomorphic encryption. It was raised [1] in 1978 but the
+                                first FHE scheme was proposed by Gentry in his PhD thesis in 2009 [2] and
+                                which was later extended and improved by many authors. FHE has been
+                                becoming an important research direction and has many applications in cloud
+                                computation, privacy-preserving machine learning, e-voting, etc. In this
+                                project, we will investigate the FHE scheme from integers [3] and its
+                                applications in e-voting [4]. The students are also required to implement the
+                                resulting e-voting system.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>[1] R. L. Rivest, L. Adleman, and M. L. Dertouzos. On data banks and privacy
+                                homomorphisms. In Foundations of Secure Computation, 1978.
+                                [2] C. gentry. A Fully Homomorphic Encryption Scheme. PhD thesis,
+                                Stanford 2009.
+                                [3] Marten van Dijk, Craig Gentry, Shai Halevi, Vinod Vaikuntanathan: Fully
+                                Homomorphic Encryption over the Integers. EUROCRYPT 2010: 24-43
+                                [4] Xun Yi, Russell Paulet, Elisa Bertino: Homomorphic Encryption and
+                                Applications. Springer Briefs in Computer Science, Springer 2014, ISBN 978-3-319-12228-1, pp. 1-126
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <br>
+                    <h3>Group Members and Roles:</h3>
+                    <table class="table">
+                        <tr>
+                            <th>Name</th>
+                            <th>Role(s)</th>
+                        </tr>
+                        <tr>
+                            <td>Jeanne Robyn Li Pei Xin</td>
+                            <td>Scammer</td>
+                        </tr>
+                        <tr>
+                            <td>Aaron Vincent</td>
+                            <td>Scammer</td>
+                        </tr>
+                        <tr>
+                            <td>Lim Yong Xiang</td>
+                            <td>Scammer</td>
+                        </tr>
+                        <tr>
+                            <td>Low Ying Shao, Jim</td>
+                            <td>Scammer</td>
+                        </tr>
+                        <tr>
+                            <td>Tan ZiKang</td>
+                            <td>Scammer</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <h2>Product Objective:</h2>
+                    <p>To implement a fully homomorphic encryption scheme and to apply it to e-voting application.</p>
+                    <br/>
+                    <h2>Product Description:</h2>
+                    <p>[insert some info on FHE here and how we gonna implement it to a django e-voting webapp]</p>
+
+                    
+
+
+
+                    <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+                    <p>
+                        Make sure to keep all page content within the
+                        <code>#page-content-wrapper</code>
+                        . The top navbar is optional, and just for demonstration. Just create an element with the
+                        <code>#sidebarToggle</code>
+                        ID which will toggle the menu when clicked.
+                    </p>
+                </div>
+            </div>
         </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </body>
 </html>
